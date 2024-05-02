@@ -15,6 +15,7 @@
 .link {
     text-decoration: none;
     margin: 2px;
+    text-transform: uppercase;
     font-family: sans-serif;
     font-size: 11px;
 }
