@@ -1,0 +1,28 @@
+.backgroundPrimary {
+    background-color:#E3FDFD ;
+}
+.backgroundSecondary {
+    background-color: #CBF1F5;
+}
+
+.backgroundSecondaryAlt {
+    background-color: #A6E3E9;
+}
+
+.backgroundTertiary {
+    background-color: #4aa7ac;
+}
+
+.primaryColor {
+    color: #E3FDFD;
+}
+.secondaryColor {
+    color: #CBF1F5;
+}
+.secondaryColorAlt {
+    color: #A6E3E9
+}
+
+.tertiaryColor {
+    color: #4aa7ac
+}
