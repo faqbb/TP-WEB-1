@@ -7,3 +7,63 @@
     flex-direction: column;
     align-items: center;
 }
+
+.LinkBar {
+    text-align: end;
+}
+
+.link {
+    text-decoration: none;
+    margin: 2px;
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+.backgroundPrimary {
+    display: flex;
+    flex-direction: column;
+}
+
+.backgroundTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.foto {
+    width: 350px;
+    height: 400px;
+}
+
+.formulario {
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+}
+
+.formulario h4 {
+    font-size: x-large;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 380px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-family: sans-serif;
+}
+
+.formulario .registro {
+    width: 100%;
+    border-radius: 50px;
+    padding: 12px;
+}

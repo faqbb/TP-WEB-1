@@ -1,6 +1,7 @@
 .backgroundPrimary {
-    background-color:#E3FDFD ;
+    background-color: #E3FDFD;
 }
+
 .backgroundSecondary {
     background-color: #CBF1F5;
 }
@@ -16,13 +17,41 @@
 .primaryColor {
     color: #E3FDFD;
 }
+
 .secondaryColor {
     color: #CBF1F5;
 }
+
 .secondaryColorAlt {
     color: #A6E3E9
 }
 
 .tertiaryColor {
     color: #4aa7ac
+}
+
+.backgroundTitle {
+    background-color: #A6E3E9;
+}
+
+.backgroundRegistro {
+    background-image: url(/img/Background_Registro.jpg);
+}
+
+.formulario {
+    background-color: #4aa7ac;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.control {
+    background-color: #CBF1F5;
+    color: white;
+    border: solid #634b4b;
+}
+
+.formulario .registro {
+    border: solid #A6E3E9;
+    background-color: #CBF1F5;
+    color: rgb(0, 0, 0);
 }
