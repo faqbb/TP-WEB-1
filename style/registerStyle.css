@@ -1,0 +1,51 @@
+.backgroundRegistro {
+    background-image: url(/img/Background_Registro.jpg);
+}
+
+.formulario {
+    background-color: #4aa7ac;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.control {
+    background-color: #CBF1F5;
+    color: white;
+    border: solid #634b4b;
+}
+
+.formulario .registro {
+    border: solid #A6E3E9;
+    background-color: #CBF1F5;
+    color: rgb(0, 0, 0);
+}
+
+.formulario {
+    width: 300px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.formulario h4 {
+    font-size: x-large;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.controls {
+    width: 280px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-family: sans-serif;
+}
+
+.formulario .registro {
+    width: 100%;
+    border-radius: 50px;
+    padding: 12px;
+}

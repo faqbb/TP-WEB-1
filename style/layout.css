@@ -1,17 +1,36 @@
+:root {
+    --color-primary: #E3FDFD;
+    --color-secondary: #CBF1F5;
+    --color-secondary-alt: #A6E3E9;
+    --color-tertiary: #4aa7ac;
+}
+
+[mode="dark"] {
+    --color-primary: #0000;
+    --color-secondary: #CBF1F5;
+    --color-secondary-alt: #A6E3E9;
+    --color-tertiary: #ffff;
+}
+
+body {
+    background-color: var(--color-primary);
+    color: #4aa7ac;
+}
+
 .backgroundPrimary {
-    background-color: #E3FDFD;
+    background-color: var(--color-primary);
 }
 
 .backgroundSecondary {
-    background-color: #CBF1F5;
+    background-color: var(--color-secondary);
 }
 
 .backgroundSecondaryAlt {
-    background-color: #A6E3E9;
+    background-color: var(--color-secondary-alt);
 }
 
 .backgroundTertiary {
-    background-color: #4aa7ac;
+    background-color: var(--color-tertiary);
 }
 
 .primaryColor {
@@ -32,26 +51,4 @@
 
 .backgroundTitle {
     background-color: #A6E3E9;
-}
-
-.backgroundRegistro {
-    background-image: url(/img/Background_Registro.jpg);
-}
-
-.formulario {
-    background-color: #4aa7ac;
-    color: white;
-    box-shadow: 7px 13px 37px #000;
-}
-
-.control {
-    background-color: #CBF1F5;
-    color: white;
-    border: solid #634b4b;
-}
-
-.formulario .registro {
-    border: solid #A6E3E9;
-    background-color: #CBF1F5;
-    color: rgb(0, 0, 0);
 }
