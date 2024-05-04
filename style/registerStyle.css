@@ -11,7 +11,15 @@
 .control {
     background-color: #CBF1F5;
     color: white;
-    border: solid #634b4b;
+    border: solid #000;
+}
+
+.formulario {
+    width: 300px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
 }
 
 .formulario .registro {
@@ -20,20 +28,11 @@
     color: rgb(0, 0, 0);
 }
 
-.formulario {
-    width: 300px;
-    padding: 30px;
-    margin: auto;
-    margin-top: 10px;
-    border-radius: 4px;
-}
-
 .formulario h4 {
     font-size: x-large;
     text-align: center;
     font-family: sans-serif;
     margin-bottom: 20px;
-    padding: 30px;
 }
 
 .controls {

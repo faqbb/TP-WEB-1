@@ -43,19 +43,19 @@ body {
 }
 
 .primaryColor {
-    color: #E3FDFD;
+    color: var(--color-primary);
 }
 
 .secondaryColor {
-    color: #CBF1F5;
+    color: var(--color-secondary);
 }
 
 .secondaryColorAlt {
-    color: #A6E3E9
+    color: var(--color-secondary-alt);
 }
 
 .tertiaryColor {
-    color: #4aa7ac
+    color: var(--color-tertiary)
 }
 
 /* Title */
