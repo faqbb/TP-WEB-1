@@ -1,5 +1,5 @@
-document.querySelector(".btn_menu").addEventListener("click", toggleMenu);
+document.getElementById('js_menu_toggle').addEventListener('click', toggle);
 
-function toggleMenu() {
+function toggle() {
     document.querySelector(".LinkBar").classList.toggle("show");
 }

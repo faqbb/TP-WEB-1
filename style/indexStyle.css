@@ -12,10 +12,12 @@
 
 .backgroundHeader {
     margin-bottom: 15px;
+    width: 350px;
     border-radius: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    align-self: center;
 }
 
 .foto {
@@ -31,26 +33,16 @@
     justify-content: center;
 }
 
-li {
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-
 .img_menu {
     width: 35px;
     height: 35px;
     filter: invert(47%) sepia(5%) saturate(4324%) hue-rotate(135deg) brightness(128%) contrast(70%);
 }
 
-ul.LinkBar {
-    display: none;
-    flex-direction: column;
-    justify-content: end;
-}
-
-ul.navigation.show {
+li {
     display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 .link {
@@ -68,26 +60,37 @@ ul.navigation.show {
     background-color: var(--color-secondary);
 }
 
-ul li {
-    list-style: none;
+.LinkBar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.LinkBar.show {
+    display: flex;
+}
+
+ul.LinkBar li a {
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 660px) {
+
+    /* ESTO ES LO QUE SE VE EN DESKTOP*/
     .btn_menu {
         display: none;
     }
 
-    ul.LinkBar {
+    .LinkBar {
         display: flex;
         flex-direction: row;
         padding-right: 40px;
     }
 
     .backgroundHeader {
-        justify-content: space-between;
-    }
-
-    .title {
-        padding-left: 60px;
+        justify-content: center;
+        align-items: center;
     }
 }
