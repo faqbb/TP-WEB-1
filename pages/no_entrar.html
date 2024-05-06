@@ -10,9 +10,32 @@
 </head>
 
 <body class="backgroundPrimary">
-    <h2>TE DIJE QUE NO ENTRES!</h2>
-    <img class="foto" src="/img/descarga.jfif" alt="d">
-    <script type="text/javascript" src="scripts/indexScript.js"></script>
+    <h1 class="tertiaryColor title">TE DIJE QUE NO ENTRES!</h1>
+    <nav class="navBar">
+        <div class="navButtons">
+            <div class="switch">
+                <input type="checkbox" class="switchInput" id="mode">
+                <label for="mode" class="switchLabel">
+            </div>
+            <button class="dropdownButton backgroundSecondary tertiaryColor" id="dropdownButton"
+                onclick="toggleContent()">▼</button>
+        </div>
+        <ul class="navList" id="navList">
+            <li class="navItem backgroundSecondary "><a href="/index.html" class="tertiaryColor"> Inicio</a></li>
+            <li class="navItem backgroundSecondary "><a href="sobre_nosotros.html" class="tertiaryColor"> Sobre
+                    nosotros</a></li>
+            <li class="navItem backgroundSecondary "><a href="no_entrar.html" class="tertiaryColor"> NO ENTRAR</a>
+            </li>
+            <li class="navItem backgroundSecondary "><a href="registro.html" class="tertiaryColor"> Registro</a>
+            </li>
+        </ul>
+    </nav>
+    <footer class="footer backgroundSecondary tertiaryColor">
+        <h6>2024</h6>
+        <h6>Escudero - Barberia</h6>
+        <h6>TUDAI</h6>
+    </footer>
+    <script type="text/javascript" src="/scripts/mainScript.js"></script>
 </body>
 
 </html>

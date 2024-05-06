@@ -14,30 +14,41 @@
 </head>
 
 <body class="backgroundPrimary">
-    <div class="backgroundHeader">
+    <div class="titleBackground backgroundSecondary ">
         <h1 class="tertiaryColor title ">Mundi Viajes 🌎 </h1>
-        <div class="btn_menu" id="js_menu_toggle">
-            <img class="img_menu" src="img/pngwing.com.png" alt="menu">
-        </div>
     </div>
-    <nav class="menu">
-        <ul class="LinkBar">
-            <li><a href="index.html" class="link BorderLink"> inicio</a></li>
-            <li><a href="pages/sobre_nosotros.html" class="link BorderLink"> sobre nosotros</a></li>
-            <li><a href="pages/no_entrar.html" class="link BorderLink"> no entrar</a></li>
-            <li><a href="pages/registro.html" class="link BorderLink"> registro</a></li>
+
+    <nav class="navBar">
+        <div class="navButtons">
+            <div class="switch">
+                <input type="checkbox" class="switchInput" id="mode">
+                <label for="mode" class="switchLabel">
+            </div>
+            <button class="dropdownButton backgroundSecondary tertiaryColor" id="dropdownButton"
+                onclick="toggleContent()">▼</button>
+        </div>
+        <ul class="navList" id="navList">
+            <li class="navItem backgroundSecondary "><a href="index.html" class="tertiaryColor"> Inicio</a></li>
+            <li class="navItem backgroundSecondary "><a href="pages/sobre_nosotros.html" class="tertiaryColor"> Sobre
+                    nosotros</a></li>
+            <li class="navItem backgroundSecondary "><a href="pages/no_entrar.html" class="tertiaryColor"> NO ENTRAR</a>
+            </li>
+            <li class="navItem backgroundSecondary "><a href="pages/registro.html" class="tertiaryColor"> Registro</a>
+            </li>
         </ul>
     </nav>
-
-    <div class="box backgroundSecondary">
+    <div class="introductionContainer backgroundSecondary">
         <h3 class="tertiaryColor">Lorem ipsum</h3>
         <p class="tertiaryColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident optio velit, nam
             reprehenderit ratione nostrum vitae in, accusantium corrupti ipsum veritatis tempora fuga quaerat expedita
             dolorum impedit amet ullam dolores?</p>
     </div>
-
-    <input type="checkbox" name="MODO" id="mode">
-    <script type="text/javascript" src="scripts/indexScript.js"></script>
+    <footer class="footer backgroundSecondary tertiaryColor">
+        <h6>2024</h6>
+        <h6>Escudero - Barberia</h6>
+        <h6>TUDAI</h6>
+    </footer>
+    <script type="text/javascript" src="scripts/mainScript.js"></script>
 </body>
 
 </html>
