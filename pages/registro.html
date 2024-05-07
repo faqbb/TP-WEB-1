@@ -17,15 +17,22 @@
         <input class="controls" type="text" name="dni" placeholder="Ingrese su DNI" minlength="6" maxlength="8"
             required>
         <input class="controls" type="email" name="email" placeholder="Ingrese su Email" required>
-        <div class="Region_Capchat">
-            <button class="ButtonRefesh backgroundSecondary"> <img class="img_RefeshCapchat"
-                    src="/img/Refresh_Capchat.png" alt="RefeshCapchat"> </button>
-            <input class="ControlCapchat" type="text" name="capchat" placeholder="4 x 2 5 g">
-            <input class="CapchatComplit" type="text" name="ingrese_capchat" placeholder="Ingrese capchat" required>
-        </div>
-        <button class="registro"> registrar</button>
+        <div class="RegionCaptchaGeneral">
+            <div>
+                <button class="ButtonRefesh backgroundSecondary"> <img class="image_captchat"
+                        src="/img/Refresh_Captcha.png" alt="RefeshCaptcha"> </button>
+                <input class="ControlCaptcha" type="text" name="captcha" value="4 x 2 5 g" disabled>
+            </div>
+            <div>
+                <button class="ButtonConfirm backgroundSecondary"><img class="image_captchat"
+                        src="/img/confirm_Captcha.png" alt="ConfirmCaptcha"></button>
+                <input class="CaptchaComplit" type="text" name="ingrese_captcha" placeholder="Ingrese captcha"
+                    maxlength="5" required>
+            </div>
 
-        <!--FALTA PONER EL CAPCHAT-->
+        </div>
+        <div class="menssage">- Captcha correcto -</div>
+        <button class="registro"> registrar</button>
     </form>
     <footer class="footer backgroundSecondary tertiaryColor">
         <h6>2024</h6>
