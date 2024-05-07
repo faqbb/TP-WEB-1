@@ -11,7 +11,6 @@
 .control {
     background-color: #CBF1F5;
     color: white;
-    border: solid #000;
 }
 
 .formulario {
@@ -23,7 +22,7 @@
 }
 
 .formulario .registro {
-    border: solid #A6E3E9;
+    border: solid var(--color-secondary-alt);
     background-color: #CBF1F5;
     color: rgb(0, 0, 0);
 }
@@ -40,6 +39,7 @@
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
+    border: solid var(--color-secondary-alt);
     font-family: sans-serif;
 }
 
@@ -47,4 +47,47 @@
     width: 100%;
     border-radius: 50px;
     padding: 12px;
+}
+
+.Region_Capchat {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 12px;
+    align-items: center;
+}
+
+.img_RefeshCapchat {
+    width: 14px;
+    height: 12px;
+}
+
+.ButtonRefesh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid var(--color-secondary-alt);
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+}
+
+.ControlCapchat {
+    width: 105px;
+    height: 15px;
+    padding: 10px;
+    border: solid var(--color-secondary-alt);
+    border-radius: 4px;
+    margin: 3px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.CapchatComplit {
+    width: 105px;
+    height: 15px;
+    padding: 10px;
+    border: solid var(--color-secondary-alt);
+    border-radius: 4px;
+    margin: 3px;
 }
