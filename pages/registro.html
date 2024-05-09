@@ -18,27 +18,23 @@
             required>
         <input class="controls" type="email" name="email" placeholder="Ingrese su Email" required>
         <div class="RegionCaptchaGeneral">
-            <div>
-                <button class="ButtonRefesh backgroundSecondary"> <img class="image_captchat"
-                        src="/img/Refresh_Captcha.png" alt="RefeshCaptcha"> </button>
-                <input class="ControlCaptcha" type="text" name="captcha" value="4 x 2 5 g" disabled>
-            </div>
-            <div>
-                <button class="ButtonConfirm backgroundSecondary"><img class="image_captchat"
-                        src="/img/confirm_Captcha.png" alt="ConfirmCaptcha"></button>
-                <input class="CaptchaComplit" type="text" name="ingrese_captcha" placeholder="Ingrese captcha"
-                    maxlength="5" required>
-            </div>
-
+            <div class="ControlCaptcha" id="TextCaptcha"></div>
+            <button type="button" class="ButtonRefesh backgroundSecondary" onclick="RefreshCaptcha()"> <img
+                    class="image_captchat" src="/img/Refresh_Captcha.png" alt="RefeshCaptcha"> </button>
+            <input class="CaptchaComplit" type="text" name="ingrese_captcha" placeholder="Ingrese captcha" maxlength="6"
+                required>
+            <button type="button" class="ButtonConfirm backgroundSecondary"><img class="image_captchat"
+                    src="/img/confirm_Captcha.png" alt="ConfirmCaptcha"></button>
+            <div class="menssage">- Captcha correcto -</div>
         </div>
-        <div class="menssage">- Captcha correcto -</div>
-        <button class="registro"> registrar</button>
+        <button type="submit" class="registro"> registrar</button>
     </form>
     <footer class="footer backgroundSecondary tertiaryColor">
         <h6>2024</h6>
         <h6>Escudero - Barberia</h6>
         <h6>TUDAI</h6>
     </footer>
+    <script type="java/Javascript" src="/scripts/mainScript.js"></script>
 </body>
 
 </html>

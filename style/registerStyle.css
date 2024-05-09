@@ -3,13 +3,13 @@
 }
 
 .formulario {
-    background-color: #4aa7ac;
+    background-color: var(--color-tertiary);
     color: white;
     box-shadow: 7px 13px 37px #000;
 }
 
 .control {
-    background-color: #CBF1F5;
+    background-color: var(--color-secondary);
     color: white;
 }
 
@@ -23,7 +23,7 @@
 
 .formulario .registro {
     border: solid var(--color-secondary-alt);
-    background-color: #CBF1F5;
+    background-color: var(--color-secondary);
     color: rgb(0, 0, 0);
 }
 
@@ -71,8 +71,7 @@
 /*REGION CAPTCHA*/
 .ButtonRefesh {
     position: absolute;
-    margin-top: 5.5px;
-    margin-left: 6px;
+    margin-left: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,8 +95,7 @@
 /*REGION CAPTCHA COMPLIT*/
 .ButtonConfirm {
     position: absolute;
-    margin-top: 5.5px;
-    margin-left: 118px;
+    margin-left: 262px;
     display: flex;
     justify-content: center;
     align-items: center;
