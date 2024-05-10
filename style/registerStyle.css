@@ -5,7 +5,7 @@
 .formulario {
     background-color: var(--color-tertiary);
     color: white;
-    box-shadow: 7px 13px 37px #000;
+    box-shadow: 7px 13px 37px var(--color-black);
 }
 
 .control {
@@ -24,7 +24,7 @@
 .formulario .registro {
     border: solid var(--color-secondary-alt);
     background-color: var(--color-secondary);
-    color: rgb(0, 0, 0);
+    color: var(--color-black);
 }
 
 .formulario h4 {
@@ -60,7 +60,6 @@
 .menssage {
     text-align: center;
     margin-bottom: 12px;
-    display: none;
 }
 
 .image_captchat {
@@ -82,13 +81,16 @@
 }
 
 .ControlCaptcha {
+    display: flex;
+    align-items: center;
+    justify-content: end;
     width: 142px;
     height: 34px;
+    color: var(--color-black);
     background-color: white;
     border: solid var(--color-secondary-alt);
     border-radius: 4px;
     margin-right: 3px;
-    text-align: end;
     font-size: 20px;
 }
 

@@ -6,6 +6,7 @@
     --color-secondary: #CBF1F5;
     --color-secondary-alt: #A6E3E9;
     --color-tertiary: #4aa7ac;
+    --color-black: #000000;
 }
 
 [mode="dark"] {
