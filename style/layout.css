@@ -61,6 +61,8 @@ body {
 /* Title */
 
 .titleBackground {
+    display: flex;
+    align-items: center;
     padding: 3px;
     border-radius: 60px;
     max-width: fit-content;
@@ -71,7 +73,13 @@ body {
 }
 
 .title {
-    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.img_title {
+    width: 50px;
+    height: 50px;
 }
 
 /* Nav Style */
