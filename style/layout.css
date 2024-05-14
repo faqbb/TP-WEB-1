@@ -21,6 +21,7 @@ body {
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     margin: 0px;
+    min-height: 100vh;
 }
 
 /* Color classes */
@@ -172,10 +173,11 @@ body {
 /* Footer */
 
 .footer {
+    margin-top: auto;
     display: flex;
     padding-inline: 20px;
     justify-content: space-between;
-    margin-top: 100%;
+    align-items: center;
 }
 
 
@@ -215,6 +217,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
 
 }

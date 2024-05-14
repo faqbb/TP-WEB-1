@@ -3,6 +3,10 @@
 }
 
 .formulario {
+    width: 300px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 30px;
     background-color: var(--color-tertiary);
     color: white;
     box-shadow: 7px 13px 37px var(--color-black);
@@ -11,14 +15,6 @@
 .control {
     background-color: var(--color-secondary);
     color: white;
-}
-
-.formulario {
-    width: 300px;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 30px;
 }
 
 .formulario .registro {
