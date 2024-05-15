@@ -1,8 +1,7 @@
 .formulario {
     width: 300px;
     padding: 30px;
-    margin-top: 0.5%;
-    margin-left: 35%;
+    margin: auto;
     margin-bottom: 2%;
     border-radius: 30px;
     background-color: var(--color-tertiary);
