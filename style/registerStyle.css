@@ -1,7 +1,16 @@
+.BodyGeneral {
+    display: flex;
+    flex-direction: column;
+}
+
+.ConteinerFormulario {
+    display: flex;
+    justify-content: center;
+}
+
 .formulario {
     width: 300px;
     padding: 30px;
-    margin: auto;
     margin-bottom: 2%;
     border-radius: 30px;
     background-color: var(--color-tertiary);
