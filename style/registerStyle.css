@@ -1,20 +1,18 @@
-.backgroundRegistro {
-    background-image: url(/img/Background_Registro.jpg);
-}
-
 .formulario {
     width: 300px;
     padding: 30px;
-    margin: auto;
+    margin-top: 0.5%;
+    margin-left: 35%;
+    margin-bottom: 2%;
     border-radius: 30px;
     background-color: var(--color-tertiary);
-    color: white;
+    color: var(--color-white);
     box-shadow: 7px 13px 37px var(--color-black);
 }
 
 .control {
     background-color: var(--color-secondary);
-    color: white;
+    color: var(--color-white);
 }
 
 .formulario .registro {
@@ -83,7 +81,7 @@
     width: 142px;
     height: 36px;
     color: var(--color-black);
-    background-color: white;
+    background-color: var(--color-white);
     border: solid var(--color-secondary-alt);
     border-radius: 4px;
     margin-right: 3px;
@@ -93,7 +91,7 @@
 /*REGION CAPTCHA COMPLIT*/
 .ButtonConfirm {
     position: absolute;
-    margin-left: 262px;
+    margin-left: 265px;
     display: flex;
     justify-content: center;
     align-items: center;

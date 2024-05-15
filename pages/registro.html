@@ -4,12 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro</title>
+    <link rel="icon" href="/img/Mundi_Viajes.png">
     <link rel="stylesheet" href="/style/registerStyle.css">
     <link rel="stylesheet" href="/style/layout.css">
 </head>
 
-<body class="backgroundRegistro">
+<body class="backgroundPrimary">
+    <nav class="navBar">
+        <div class="navButtons">
+            <div class="switch">
+                <input type="checkbox" class="switchInput" id="mode">
+                <label for="mode" class="switchLabel">
+            </div>
+            <button class="dropdownButton backgroundSecondary tertiaryColor" id="dropdownButton"
+                onclick="toggleContent()">▼</button>
+        </div>
+        <ul class="navList" id="navList">
+            <li class="navItem"><a href="/index.html" class="tertiaryColor"> Inicio</a></li>
+            <li class="navItem"><a href="sobre_nosotros.html" class="tertiaryColor"> Sobre
+                    nosotros</a></li>
+            <li class="navItem"><a href="no_entrar.html" class="tertiaryColor"> NO ENTRAR</a>
+            </li>
+            <li class="navItem"><a href="registro.html" class="tertiaryColor"> Registro</a>
+            </li>
+        </ul>
+    </nav>
     <form class="formulario" action="">
         <h4>Datos Personales</h4>
         <input class="controls" type="text" name="nombre" placeholder="Ingrese su Nombre" required>
@@ -36,6 +56,7 @@
         <h6>TUDAI</h6>
     </footer>
     <script src="../scripts/registerScript.js"></script>
+    <script src="../scripts/mainScript.js"></script>
 </body>
 
 </html>
