@@ -22,34 +22,33 @@
         </div>
         <ul class="navList" id="navList">
             <li class="navItem"><a href="/index.html" class="tertiaryColor"> Inicio</a></li>
-            <li class="navItem"><a href="sobre_nosotros.html" class="tertiaryColor"> Sobre
-                    nosotros</a></li>
-            <li class="navItem"><a href="no_entrar.html" class="tertiaryColor"> NO ENTRAR</a>
+            <li class="navItem"><a href="sobre_nosotros.html" class="tertiaryColor">Quines somos</a></li>
+            <li class="navItem"><a href="no_entrar.html" class="tertiaryColor">Cuentanos tu experiencia!</a>
             </li>
-            <li class="navItem"><a href="registro.html" class="tertiaryColor"> Registro</a>
+            <li class="navItem"><a href="registro.html" class="tertiaryColor">Registro</a>
             </li>
         </ul>
     </nav>
     <div class="ConteinerFormulario">
         <form class="formulario" action="">
-            <h4>Datos Personales</h4>
+            <h4 class="secondaryColor ">Datos Personales</h4>
             <input class="controls" type="text" name="nombre" placeholder="Ingrese su Nombre" required>
             <input class="controls" type="text" name="apellido" placeholder="Ingrese su Apellido" required>
             <input class="controls" type="text" name="dni" placeholder="Ingrese su DNI" minlength="6" maxlength="8"
                 required>
             <input class="controls" type="email" name="email" placeholder="Ingrese su Email" required>
             <div class="RegionCaptchaGeneral">
-                <div class="ControlCaptcha" id="TextCaptcha"></div>
+                <div class="ControlCaptcha tertiaryColor" id="TextCaptcha"></div>
                 <button type="button" class="ButtonRefesh backgroundSecondary" id="refreshButton">
                     <img class="image_captchat" src="/img/Refresh_Captcha.png" alt="Refresh Captcha">
                 </button>
-                <input class="CaptchaComplit" id="inputCaptcha" type="text" name="ingrese_captcha"
-                    placeholder="Ingrese captcha" maxlength="6" required>
+                <input class="CaptchaComplete" id="inputCaptcha" type="text" name="ingrese_captcha"
+                    placeholder="Completar" maxlength="6" required>
                 <button type="button" class="ButtonConfirm backgroundSecondary" id="ConfirmButton"><img
                         class="image_captchat" src="/img/confirm_Captcha.png" alt="ConfirmCaptcha"></button>
             </div>
-            <div class="menssage" id="menssage"></div>
-            <button type="submit" class="registro"> registrar</button>
+            <div class="menssage secondaryColor" id="menssage"></div>
+            <button type="submit" class="registro secondaryColor"> Enviar</button>
         </form>
     </div>
     <footer class="footer backgroundSecondary tertiaryColor">

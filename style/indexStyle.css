@@ -3,5 +3,109 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 10px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.introArticle {
+    text-align: center;
+    font-size: small;
+}
+
+.outroArticle {
+    text-align: center;
+    font-size: small;
+    margin-bottom: 1.5%;
+}
+
+.slide {
+    display: none;
+    color: white;
+    max-width: 0%;
+    padding-block: 20%;
+    margin-block: 10px;
+}
+
+.TitleSlide {
+    background-color: black;
+    border-radius: 50px;
+    width: 15%;
+    opacity: 30%;
+    text-align: center;
+}
+
+.shown {
+    display: flex;
+    max-width: 100%;
+}
+
+#slide1 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/ba/Barcelona_panorma_banner.jpg);
+    background-position: left;
+    justify-content: center;
+    font-size: large;
+}
+
+#slide2 {
+    background-image: url(https://offloadmedia.feverup.com/secretdubai.co/wp-content/uploads/2023/10/04152304/Secret-Dubai-article-cover-42-1024x726.jpg);
+    background-position: left;
+    justify-content: center;
+    font-size: large;
+}
+
+#slide3 {
+    background-image: url(https://cesran.org/wp-content/uploads/2017/08/Visuel-carrousel-dossier-Ou-sortir-le-soir-a-Paris-740x380-C-DR.jpg);
+    background-position-x: center;
+    justify-content: end;
+}
+
+.linkContainer {
+    display: none;
+}
+
+.linkItemBox {
+    min-width: 50%;
+    max-height: 20%;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 25%;
+}
+
+
+/* Desktop Display */
+@media only screen and (min-width: 950px) {
+    .introductionContainer {
+        border-top-right-radius: 2%;
+        border-bottom-right-radius: 2%;
+        padding-bottom: 0px;
+    }
+
+    .mainContainer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .linkContainer {
+        align-self: center;
+        width: 35%;
+    }
+
+    .linkItemBox {
+        min-width: 50%;
+    }
+
+    .linkContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block: 20px;
+        row-gap: 20px;
+    }
 }
