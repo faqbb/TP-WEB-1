@@ -15,6 +15,8 @@
     --color-secondary: #006666;
     --color-secondary-alt: #009999;
     --color-tertiary: #99cccc;
+    --color-white: #000000;
+    --color-black: #ffffff;
 }
 
 body {
@@ -25,6 +27,14 @@ body {
     min-height: 100vh;
 }
 
+path {
+    stroke: var(--color-black);
+}
+
+
+a {
+    text-decoration: none;
+}
 /* Color classes */
 
 .backgroundPrimary {
@@ -57,6 +67,14 @@ body {
 
 .tertiaryColor {
     color: var(--color-tertiary)
+}
+
+.whiteColor {
+    color: var(--color-white);
+}
+
+.blackColor {
+    color: var(--color-black);
 }
 
 /* Title */
@@ -193,7 +211,7 @@ body {
 
 
 /* Desktop Display */
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 950px) {
 
     .navBar {
         display: flex;

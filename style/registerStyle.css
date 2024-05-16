@@ -85,10 +85,10 @@
 .ControlCaptcha {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
+    padding-left: 10%;
     width: 142px;
     height: 36px;
-    color: var(--color-black);
     background-color: var(--color-white);
     border: solid var(--color-secondary-alt);
     border-radius: 4px;
@@ -109,7 +109,9 @@
     height: 30px;
 }
 
-.CaptchaComplit {
+.CaptchaComplete {
+    font-size: larger ;
+    text-indent: 10%;
     width: 143px;
     height: 34px;
     border: solid var(--color-secondary-alt);
