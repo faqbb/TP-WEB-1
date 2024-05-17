@@ -6,12 +6,12 @@
 .ConteinerFormulario {
     display: flex;
     justify-content: center;
+    margin-block: 3%;
 }
 
 .formulario {
     width: 300px;
     padding: 30px;
-    margin-bottom: 2%;
     border-radius: 30px;
     background-color: var(--color-tertiary);
     color: var(--color-white);

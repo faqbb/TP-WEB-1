@@ -1,0 +1,77 @@
+.ContainerTable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titleTable {
+    margin-inline: 2%;
+    text-align: center;
+}
+
+table {
+    margin-inline: 2%;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.ContainerArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 3%;
+}
+
+.CompleteArea {
+    width: 70%;
+    height: 150px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.linkContainer {
+    display: none;
+}
+
+.mainConteiner {
+    text-align: center;
+}
+
+.SubmitButton {
+    border: none;
+    font-size: larger;
+    padding: 5px;
+    margin-top: 3%;
+    margin-bottom: 12%;
+}
+
+
+@media only screen and (min-width: 950px) {
+    .ContainerArea {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .SubmitButton {
+        border: none;
+        font-size: larger;
+        padding: 10px;
+        margin-top: 1%;
+        margin-bottom: 6%;
+    }
+
+    .CompleteArea {
+        width: 90%;
+        height: 200px;
+        margin-bottom: 30px;
+        background-color: white;
+    }
+}

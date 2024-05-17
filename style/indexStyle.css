@@ -13,6 +13,7 @@
     flex-direction: column;
 }
 
+
 .introArticle {
     text-align: center;
     font-size: small;
@@ -27,6 +28,7 @@
 .slide {
     display: none;
     color: white;
+    min-height: max-content;
     max-width: 0%;
     padding-block: 20%;
     margin-block: 10px;
@@ -48,7 +50,7 @@
 #slide1 {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/ba/Barcelona_panorma_banner.jpg);
     background-position: left;
-    justify-content: center;
+    justify-content: start;
     font-size: large;
 }
 
@@ -63,6 +65,7 @@
     background-image: url(https://cesran.org/wp-content/uploads/2017/08/Visuel-carrousel-dossier-Ou-sortir-le-soir-a-Paris-740x380-C-DR.jpg);
     background-position-x: center;
     justify-content: end;
+    font-size: large;
 }
 
 .linkContainer {
@@ -107,5 +110,9 @@
         align-items: center;
         margin-block: 20px;
         row-gap: 20px;
+    }
+
+    table {
+        width: 50%;
     }
 }

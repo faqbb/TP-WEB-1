@@ -55,6 +55,14 @@ a {
     background-color: var(--color-tertiary);
 }
 
+.backgroundWhite {
+    background-color: var(--color-white);
+}
+
+.backgroundBlack {
+    background-color: var(--color-black);
+}
+
 .primaryColor {
     color: var(--color-primary);
 }
@@ -78,6 +86,7 @@ a {
 .blackColor {
     color: var(--color-black);
 }
+
 
 /* Title */
 
@@ -185,7 +194,6 @@ a {
     align-content: center;
     min-height: 25px;
     min-width: 26px;
-    padding-bottom: 1px;
     left: 4px;
     bottom: 4px;
     background-color: var(--color-white);
@@ -223,9 +231,20 @@ a {
         text-align: center;
     }
 
+    .navList {
+        max-height: 20%;
+        overflow: hidden;
+        margin: 10px;
+        border-radius: 15px;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+    }
+
     .navItem {
         text-decoration: none;
-        align-content: center;
+        align-items: center;
+        justify-content: center;
         display: flex;
         height: 2rem;
         width: 8rem;
@@ -240,15 +259,5 @@ a {
         display: none;
     }
 
-    .navList {
-        display: none;
-    }
-
-    .navItem {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--color-secondary);
-    }
 
 }
