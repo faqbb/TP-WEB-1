@@ -1,3 +1,10 @@
+let form = document.querySelector('#form');
+form.addEventListener('submit', agregar);
+
+function agregar(e) {
+  e.preventDefault();
+}
+
 displayCaptcha()
 
 // Seccion Captcha
