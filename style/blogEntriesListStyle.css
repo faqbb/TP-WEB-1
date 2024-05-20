@@ -7,10 +7,7 @@
 
 .introContainer {
     max-width: 70%;
-    
 }
-
-
 
 .entriesContainer {
     display: flex;
@@ -24,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 5%;
+    border-radius: 20px;
 }
 
 .entryTitle {
