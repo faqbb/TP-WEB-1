@@ -27,6 +27,10 @@ body {
     min-height: 100vh;
 }
 
+svg {
+    fill: var(--color-black);
+}
+
 path {
     stroke: var(--color-black);
 }
@@ -34,6 +38,11 @@ path {
 
 a {
     text-decoration: none;
+}
+
+.separator {
+    min-width: 100%;
+    height: 2.5rem;
 }
 
 
@@ -222,7 +231,7 @@ a {
 
 
 /* Desktop Display */
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 660px) {
 
     .navBar {
         display: flex;

@@ -1,0 +1,40 @@
+.returnButton {
+    padding: 0.5rem;
+    border-radius: 100%;
+    width: fit-content;
+    margin-block: 2%;
+    margin-left: 2%;
+}
+
+.entryIntroContainer {
+    text-align: center;
+}
+
+
+.blogContentContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+}
+.entryImg {
+    max-width: 100%;
+}
+
+.blogText {
+    text-align: center;
+    margin-block: 2%;
+}
+
+@media only screen and (min-width: 660px) { 
+    .blogContentContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        place-content: center;
+        margin-bottom: 4%;
+    }
+    .entryImg {
+        max-width: 50%;
+    }
+}

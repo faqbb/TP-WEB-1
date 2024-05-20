@@ -61,8 +61,9 @@
 }
 
 #slide3 {
-    background-image: url(https://cesran.org/wp-content/uploads/2017/08/Visuel-carrousel-dossier-Ou-sortir-le-soir-a-Paris-740x380-C-DR.jpg);
+    background-image: url(https://t3.ftcdn.net/jpg/06/02/10/24/360_F_602102439_f7KuHxotZq5H0IeUpicMtfaLZrONztft.jpg);
     background-position-x: center;
+    background-position-y: center;
     justify-content: end;
     font-size: large;
 }

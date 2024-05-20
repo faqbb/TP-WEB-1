@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - Mundi Viajes</title>
-    <link rel="icon" href="/img/Mundi_Viajes.png">
+    <link rel="icon" href="/assets/imgs/Mundi_Viajes.png">
     <link rel="stylesheet" href="/style/registerStyle.css">
     <link rel="stylesheet" href="/style/layout.css">
 </head>
 
 <body class="backgroundPrimary BodyGeneral">
+    <div class="titleBackground backgroundSecondary ">
+        <a href="../index.html">
+            <h1 class="tertiaryColor title ">Mundi Viajes <img class="img_title" src="/assets/imgs/Mundi_Viajes.png"
+                    alt="Mundi_Viajes">
+            </h1>
+        </a>
+    </div>
     <nav class="navBar">
         <div class="navButtons">
             <div class="switch">
@@ -22,8 +29,11 @@
         </div>
         <ul class="navList" id="navList">
             <li class="navItem"><a href="/index.html" class="tertiaryColor"> Inicio</a></li>
+            <li class="navItem"><a href="blogEntriesList.html" class="tertiaryColor">Entradas del blog</a></li>
             <li class="navItem"><a href="sobre_nosotros.html" class="tertiaryColor">Quienes somos?</a></li>
             <li class="navItem"><a href="Tu_experiencia.html" class="tertiaryColor">Cuentanos tu experiencia!</a>
+            </li>
+            <li class="navItem"><a href="pages/registro.html" class="whiteColor">Registrate</a>
             </li>
         </ul>
     </nav>
@@ -38,12 +48,12 @@
             <div class="RegionCaptchaGeneral">
                 <div class="ControlCaptcha tertiaryColor" id="TextCaptcha"></div>
                 <button type="button" class="ButtonRefesh backgroundSecondary" id="refreshButton">
-                    <img class="image_captchat" src="/img/Refresh_Captcha.png" alt="Refresh Captcha">
+                    <img class="image_captchat" src="/assets/imgs/Refresh_Captcha.png" alt="Refresh Captcha">
                 </button>
                 <input class="CaptchaComplete" id="inputCaptcha" type="text" name="ingrese_captcha"
                     placeholder="Completar" maxlength="6" required>
                 <button type="button" class="ButtonConfirm backgroundSecondary" id="ConfirmButton"><img
-                        class="image_captchat" src="/img/confirm_Captcha.png" alt="ConfirmCaptcha"></button>
+                        class="image_captchat" src="/assets/imgs/confirm_Captcha.png" alt="ConfirmCaptcha"></button>
             </div>
             <div class="menssage secondaryColor" id="menssage"></div>
             <button class="registro secondaryColor">Enviar</button>
