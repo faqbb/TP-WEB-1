@@ -12,15 +12,18 @@
     <link rel="icon" href="/assets/imgs/Mundi_Viajes.png">
     <link rel="stylesheet" href="/style/layout.css">
     <link rel="stylesheet" href="/style/indexStyle.css">
+    <link rel="stylesheet" href="/style/quinesSomosStyle.css">
+    <link rel="stylesheet" href="/style/registerStyle.css">
+    <link rel="stylesheet" href="/style/tuExperienciaStyle.css">
+    <link rel="stylesheet" href="/style/blogEntriesListStyle.css">
+    <link rel="stylesheet" href="/style/blogEntryStyle.css">
 </head>
 
 <body class="backgroundPrimary">
-    <div class="titleBackground backgroundSecondary ">
-        <a href="index.html">
-            <h1 class="tertiaryColor title ">Mundi Viajes<img class="img_title" src="assets/imgs/Mundi_Viajes.png"
-                    alt="Mundi_Viajes">
-            </h1>
-        </a>
+    <div class="titleBackground backgroundSecondary btntitleindex">
+        <h1 class="tertiaryColor title ">Mundi Viajes<img class="img_title" src="assets/imgs/Mundi_Viajes.png"
+                alt="Mundi_Viajes">
+        </h1>
     </div>
     <nav class="navBar">
         <div class="navButtons">
@@ -32,96 +35,22 @@
                 onclick="toggleContent()">▼</button>
         </div>
         <ul class="navList" id="navList">
-            <li class="navItem"><a href="index.html" class="whiteColor"> Inicio</a></li>
-            <li class="navItem"><a href="pages/blogEntriesList.html" class="tertiaryColor">Entradas del blog</a></li>
-            <li class="navItem"><a href="pages/sobre_nosotros.html" class="tertiaryColor">Quienes somos?</a></li>
-            <li class="navItem"><a href="pages/Tu_experiencia.html" class="tertiaryColor">Cuentanos tu experiencia!</a>
-            </li>
-            <li class="navItem"><a href="pages/registro.html" class="tertiaryColor">Registrate</a>
-            </li>
+            <li id="inicio" type="button" class="navItem btnNav">Inicio</li>
+            <li id="blogEntriesList" type="button" class="navItem btnNav">Entradas del blog</li>
+            <li id="sobre_nosotros" type="button" class="navItem btnNav">Quienes somos?</li>
+            <li id="Tu_experiencia" type="button" class="navItem btnNav">Cuentanos tu experiencia!</li>
+            <li id="registro" type="button" class="navItem btnNav">Registrate</li>
         </ul>
     </nav>
     <main class="mainContainer">
-        <section class="introductionContainer backgroundSecondary">
-            <h3 class="tertiaryColor">Bienvenidos, Welcome, Benvenuti!</h3>
-            <article class="tertiaryColor introArticle">
-                ¡Bienvenidos a nuestro rincón global de aventuras!
-                <br>En este espacio, nos encanta explorar el mundo a través de los ojos y experiencias de viajeros como
-                tú. Desde los vibrantes paisajes urbanos hasta los rincones remotos de la naturaleza, cada viaje es una
-                historia única esperando ser contada. <br />
-            </article>
-            <article class="slider">
-                <div class="slide shown" id="slide1">
-                    <h6>Barcelona, España.</h6>
-                </div>
-                <div class="slide" id="slide2">
-                    <h6>Dubai, Emiratos Árabes.</h6>
-                </div>
-                <div class="slide" id="slide3">
-                    <h6>Paris, Francia.</h6>
-                </div>
-                </div>
-                <article class="tertiaryColor outroArticle">Este blog es tu plataforma para compartir tus emocionantes
-                    travesías, tus encuentros culturales, tus platos favoritos y tus consejos más útiles para aquellos
-                    que desean descubrir nuevos destinos. ¡Vamos a empezar este viaje juntos!</article>
-        </section>
-        <section class="linkContainer">
-            <div class="linkItemBox blackColor backgroundSecondary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 22 22" fill="none">
-                    <path
-                        d="M11 3.99995C12.8839 2.91716 14.9355 2.15669 17.07 1.74995C17.551 1.63467 18.0523 1.63283 18.5341 1.74458C19.016 1.85632 19.4652 2.07852 19.8464 2.39375C20.2276 2.70897 20.5303 3.10856 20.7305 3.56086C20.9307 4.01316 21.0229 4.50585 21 4.99995V13.9999C20.9699 15.117 20.5666 16.1917 19.8542 17.0527C19.1419 17.9136 18.1617 18.5112 17.07 18.7499C14.9355 19.1567 12.8839 19.9172 11 20.9999"
-                        stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                        d="M10.9995 3.99995C9.1156 2.91716 7.06409 2.15669 4.92957 1.74995C4.44856 1.63467 3.94731 1.63283 3.46546 1.74458C2.98362 1.85632 2.53439 2.07852 2.15321 2.39375C1.77203 2.70897 1.46933 3.10856 1.26911 3.56086C1.0689 4.01316 0.976598 4.50585 0.999521 4.99995V13.9999C1.0296 15.117 1.433 16.1917 2.14533 17.0527C2.85767 17.9136 3.83793 18.5112 4.92957 18.7499C7.06409 19.1567 9.1156 19.9172 10.9995 20.9999"
-                        stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M11 21V4" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-                <a href="/pages/blogEntriesList.html" class="blackColor">
-                    <h5>Explora las entradas del blog</h5>
-                </a>
-            </div>
-            <div class="linkItemBox blackColor backgroundSecondary">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="20px" height="20px" viewBox="0 0 24 24">
-                    <path
-                        d="M17.093,1.293l-11.2,11.2a.99.99,0,0,0-.242.391l-1.6,4.8A1,1,0,0,0,5,19a1.014,1.014,0,0,0,.316-.051l4.8-1.6a1.006,1.006,0,0,0,.391-.242l11.2-11.2a1,1,0,0,0,0-1.414l-3.2-3.2A1,1,0,0,0,17.093,1.293ZM9.26,15.526l-2.679.893.893-2.679L17.8,3.414,19.586,5.2ZM3,21H20a1,1,0,0,1,0,2H3a1,1,0,0,1,0-2Z" />
-                </svg>
-                <a href="/pages/Tu_experiencia.html" class="blackColor">
-                    <h5>Cuentanos tu experiencia!</h5>
-                </a>
-            </div>
-            <div class="linkItemBox blackColor backgroundSecondary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
-                    <path
-                        d="M3 21C3 21.5523 3.44772 22 4 22C4.55228 22 5 21.5523 5 21H3ZM11.8584 15.0608C12.4051 15.139 12.9117 14.7592 12.9899 14.2125C13.0681 13.6658 12.6883 13.1592 12.1416 13.081L11.8584 15.0608ZM17.29 17.2929C16.8994 17.6834 16.8994 18.3166 17.29 18.7071C17.6805 19.0976 18.3137 19.0976 18.7042 18.7071L17.29 17.2929ZM15.0916 14.7507C14.954 15.2856 15.2759 15.8308 15.8108 15.9684C16.3457 16.1061 16.8908 15.7841 17.0285 15.2493L15.0916 14.7507ZM17.9971 20C17.4448 20 16.9971 20.4477 16.9971 21C16.9971 21.5523 17.4448 22 17.9971 22V20ZM18.0071 22C18.5594 22 19.0071 21.5523 19.0071 21C19.0071 20.4477 18.5594 20 18.0071 20V22ZM14 7C14 8.65685 12.6569 10 11 10V12C13.7614 12 16 9.76142 16 7H14ZM11 10C9.34315 10 8 8.65685 8 7H6C6 9.76142 8.23858 12 11 12V10ZM8 7C8 5.34315 9.34315 4 11 4V2C8.23858 2 6 4.23858 6 7H8ZM11 4C12.6569 4 14 5.34315 14 7H16C16 4.23858 13.7614 2 11 2V4ZM5 21C5 17.6863 7.68629 15 11 15V13C6.58172 13 3 16.5817 3 21H5ZM11 15C11.292 15 11.5786 15.0208 11.8584 15.0608L12.1416 13.081C11.7682 13.0276 11.387 13 11 13V15ZM18.997 15.5C18.997 15.6732 18.9516 15.8053 18.6776 16.0697C18.5239 16.218 18.3429 16.3653 18.0919 16.574C17.8536 16.7723 17.5741 17.0087 17.29 17.2929L18.7042 18.7071C18.92 18.4913 19.1405 18.3033 19.3709 18.1116C19.5887 17.9305 19.8452 17.7223 20.0665 17.5087C20.5426 17.0493 20.997 16.4314 20.997 15.5H18.997ZM17.997 14.5C18.5493 14.5 18.997 14.9477 18.997 15.5H20.997C20.997 13.8431 19.6539 12.5 17.997 12.5V14.5ZM17.0285 15.2493C17.1396 14.8177 17.5325 14.5 17.997 14.5V12.5C16.5978 12.5 15.4246 13.457 15.0916 14.7507L17.0285 15.2493ZM17.9971 22H18.0071V20H17.9971V22Z"
-                        fill="#000000" />
-                </svg>
-                <a href="/pages/sobre_nosotros.html" class="blackColor">
-                    <h5>Quienes somos</h5>
-                </a>
-            </div>
-            <div class="linkItemBox blackColor backgroundSecondary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
-                    <path
-                        d="M20 18L14 18M17 15V21M4 21C4 17.134 7.13401 14 11 14C11.695 14 12.3663 14.1013 13 14.2899M15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7Z"
-                        stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <a href="/pages/registro.html" class="blackColor">
-                    <h5>Registrate</h5>
-                </a>
-            </div>
-        </section>
     </main>
     <footer class="footer backgroundSecondary tertiaryColor">
         <h6>2024</h6>
         <h6>Escudero - Barberia</h6>
         <h6>TUDAI</h6>
     </footer>
-    <h1>
-        commit
-    </h1>
-    <script type="text/javascript" src="scripts/indexScript.js"></script>
     <script type="text/javascript" src="scripts/mainScript.js"></script>
+    <script type="text/javascript" src="scripts/navPartialRender.js"></script>
 </body>
 
 </html>

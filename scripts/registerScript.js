@@ -53,17 +53,16 @@ function CompararArreglos() {
   let array1 = ValueCaptcha();
   let array2 = ValueInput();
   let cont = 0;
-  let Result;
+  let Result = document.querySelector('.menssage');
   for (i = 0; i <= array1.length; i++) {
     if (array1[cont] == array2[cont]) {
-      Result = '- Captcha Correcto -';
+      Result.innerHTML = '- Captcha Correcto -';
       cont++;
     } else {
-      Result = '- Captcha Incorrecto -';
+      Result.innerHTML = '- Captcha Incorrecto -';
       i == array1.length;
     }
   }
-  document.querySelector('.menssage').innerHTML = Result;
 }
 
 function ResetInput() {

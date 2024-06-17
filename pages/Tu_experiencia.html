@@ -1,77 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu viaje - Mundi Viajes</title>
-    <link rel="icon" href="/assets/imgs/Mundi_Viajes.png">
-    <link rel="stylesheet" href="/style/layout.css">
-    <link rel="stylesheet" href="/style/tuExperienciaStyle.css">
-</head>
-
-<body class="backgroundPrimary">
-    <div class="titleBackground backgroundSecondary ">
-        <a href="/index.html">
-            <h1 class="tertiaryColor title ">Mundi Viajes<img class="img_title" src="/assets/imgs/Mundi_Viajes.png"
-                    alt="Mundi_Viajes">
-            </h1>
-        </a>
-    </div>
-    <nav class="navBar">
-        <div class="navButtons">
-            <div class="switch">
-                <input type="checkbox" class="switchInput" id="mode">
-                <label for="mode" class="switchLabel">
-            </div>
-            <button class="dropdownButton backgroundSecondary tertiaryColor" id="dropdownButton"
-                onclick="toggleContent()">▼</button>
-        </div>
-        <ul class="navList" id="navList">
-            <li class="navItem"><a href="/index.html" class="tertiaryColor">Inicio</a></li>
-            <li class="navItem"><a href="blogEntriesList.html" class="tertiaryColor">Entradas del blog</a></li>
-            <li class="navItem"><a href="sobre_nosotros.html" class="tertiaryColor">Quienes somos?</a></li>
-            <li class="navItem"><a href="Tu_experiencia.html" class="whiteColor">Cuentanos tu experiencia!</a>
-            </li>
-            <li class="navItem"><a href="registro.html" class="tertiaryColor">Registrate</a>
-            </li>
-        </ul>
-    </nav>
-    <main class="mainConteiner">
-        <div class="ContainerTable">
-            <h3 class="tertiaryColor titleTable">
-                ¡Recomendaciones para que subamos tu viaje en nuestro blog!
-            </h3>
-            <table class="backgroundSecondary table">
-                <tr class="tertiaryColor">
-                    <td>Caracteristica del viaje</td>
-                    <td>Minimo</td>
-                    <td>Maximo</td>
-                </tr>
-                <tr class="tertiaryColor">
-                    <td>Duracion</td>
-                    <td>24hs</td>
-                    <td>1 mes</td>
-                </tr>
-                <tr class="tertiaryColor">
-                    <td>Cantidad de palabras</td>
-                    <td>150</td>
-                    <td>¡Las que quieras!</td>
-                </tr>
-            </table>
-        </div>
-        <section class="ContainerArea backgroundSecondary">
-            <h3 class="tertiaryColor">Comparti tu experiencia con el resto del mundo</h3>
-            <textarea class="CompleteArea" name="experiencia" id="CompletAreaId"></textarea>
-        </section>
-        <button class="backgroundSecondary tertiaryColor SubmitButton" id="dropdownButton" type="submit">Enviar</button>
-    </main>
-    <footer class="footer backgroundSecondary tertiaryColor">
-        <h6>2024</h6>
-        <h6>Escudero - Barberia</h6>
-        <h6>TUDAI</h6>
-    </footer>
-    <script type="text/javascript" src="/scripts/mainScript.js"></script>
-</body>
-
-</html>
+<div class="ContainerTable">
+    <h3 class="tertiaryColor titleTable">
+        ¡Recomendaciones para que subamos tu viaje en nuestro blog!
+    </h3>
+    <table class="backgroundSecondary table">
+        <tr class="tertiaryColor">
+            <td>Caracteristica del viaje</td>
+            <td>Minimo</td>
+            <td>Maximo</td>
+        </tr>
+        <tr class="tertiaryColor">
+            <td>Duracion</td>
+            <td>24hs</td>
+            <td>1 mes</td>
+        </tr>
+        <tr class="tertiaryColor">
+            <td>Cantidad de palabras</td>
+            <td>150</td>
+            <td>¡Las que quieras!</td>
+        </tr>
+    </table>
+</div>
+<section class="ContainerArea backgroundSecondary">
+    <h3 class="tertiaryColor">Comparti tu experiencia con el resto del mundo</h3>
+    <textarea class="CompleteArea" name="experiencia" id="CompletAreaId"></textarea>
+</section>
+<button class="backgroundSecondary tertiaryColor SubmitButton" id="dropdownButton" type="submit">Enviar</button>
+<script type="text/javascript" src="/scripts/mainScript.js"></script>
