@@ -4,47 +4,62 @@ for (let i = 0; i < btn.length; i++) {
 }
 
 let btn_title = document.querySelector(".btntitleindex");
-btn_title.addEventListener("click", home);
+btn_title.addEventListener("click", (event) => push(event));
+
+const text = "mundiViajes";
 
 let cont = document.querySelector(".mainContainer");
 
-home();
-
-async function home() {
-    console.log("entre en el titulo");
-    let cont = document.querySelector(".mainContainer");
-    try {
-        let response = await fetch(`${window.location.origin}/pages/inicio.html`);
-        if (response.ok) {
-            response.text().then(processText);
-        } else {
-            cont.innerHTML = "error loading for inicio...";
-        }
-    } catch (error) {
-        cont.innerHTML = "Error";
-    }
-}
-
+load_content(text);
 
 function push(event) {
     let id = event.target.id;
     document.title = id;
+    if (id != "mundiViajes") {
+        selec_tab(id);
+    } else {
+        delete_tab();
+    }
     load_content(id);
     window.history.pushState({ id }, `${id}`, `/page/${id}`);
+}
+
+function selec_tab(id) {
+    btn.forEach((item) => item.classList.remove("selected"));
+    document.querySelectorAll("#" + id)
+        .forEach((item) => item.classList.add("selected"));
+}
+
+function delete_tab() {
+    let i = 0;
+    while (i < btn.length) {
+        btn.forEach((i) => i.classList.remove("selected"));
+        i++;
+    }
 }
 
 async function load_content(id) {
     try {
         let response = await fetch(`${window.location.origin}/pages/${id}.html`);
+        let responseTitle = await fetch(`${window.location.origin}/pages/inicio.html`);
         if (response.ok) {
             response.text().then(processText);
         } else {
-            cont.innerHTML = "error loading for /" + id + "...";
+            if (responseTitle.ok) {
+                responseTitle.text().then(processText);
+            } else {
+                if (id != "mundiViajes") {
+                    cont.innerHTML = "error loading for /" + id + "...";
+                } else {
+                    cont.innerHTML = "error loading for inicio...";
+                }
+            }
         }
     } catch (error) {
         cont.innerHTML = "Error";
     }
 }
+
 
 function processText(t) {
     cont.innerHTML = t;
@@ -63,6 +78,10 @@ function processText(t) {
         .forEach(b => b.addEventListener("click", () => {
             switchSlide(slide1.id)
         }))
+    //section blog
+    cont.querySelectorAll(".btn_blogs")
+        .forEach(b => b.addEventListener("click", (event) => pushBlog(event)));
+
 
     //section register
     displayCaptcha()
@@ -98,7 +117,6 @@ function switchSlide(slide) {
     }
 }
 
-
 slide1.addEventListener('click', () => {
     switchSlide(slide2.id)
 })
@@ -110,6 +128,48 @@ slide2.addEventListener('click', () => {
 slide3.addEventListener('click', () => {
     switchSlide(slide1.id)
 })
+
+//seccion blog
+function pushBlog(event) {
+    let id = event.target.id;
+    document.title = id;
+    console.log("el id es: " + id);
+    load_blog(id);
+    window.history.pushState({ id }, `${id}`, `/page/blogEntries/${id}`);
+}
+
+async function load_blog(id) {
+    try {
+        let response = await fetch(`${window.location.origin}/pages/blogEntries/${id}.html`);
+        if (response.ok) {
+            response.text().then(actionBlog);
+
+        } else {
+            cont.innerHTML = "error loading for /" + id + "...";
+        }
+    } catch (error) {
+        cont.innerHTML = "Error";
+    }
+}
+
+function actionBlog(t) {
+    cont.innerHTML = t;
+    cont.querySelectorAll(".returnButton")
+        .forEach(b => b.addEventListener("click", returnPage));
+}
+
+async function returnPage() {
+    try {
+        let response = await fetch(`${window.location.origin}/pages/blogEntriesList.html`);
+        if (response.ok) {
+            response.text().then(processText);
+        } else {
+            cont.innerHTML = "error loading for blogEntriesList...";
+        }
+    } catch (error) {
+        cont.innerHTML = "Error";
+    }
+}
 
 //seccion register
 function agregar(e) {
@@ -156,6 +216,8 @@ function CompararArreglos() {
             cont++;
         } else {
             Result.innerHTML = '- Captcha Incorrecto -';
+            Result.classList.remove("textRed");
+            Result.classList.add("textRed");
             i == array1.length;
         }
     }

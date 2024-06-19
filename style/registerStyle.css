@@ -69,6 +69,10 @@
     height: 12px;
 }
 
+.textRed {
+    color: red;
+}
+
 /*REGION CAPTCHA*/
 .ButtonRefesh {
     position: absolute;
