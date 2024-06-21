@@ -12,6 +12,7 @@
 table {
     margin-inline: 2%;
     text-align: center;
+    margin-bottom: 3%;
 }
 
 table,
@@ -19,6 +20,7 @@ th,
 td {
     border: 1px solid black;
     border-collapse: collapse;
+    padding-inline: 2%;
 }
 
 .ContainerArea {
@@ -52,10 +54,38 @@ td {
     margin-bottom: 12%;
 }
 
+.moreInfobox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.inputData {
+    padding-inline: 2%;
+    margin-block: 2%;
+}
+
+.inputLabel {
+    font-size: larger;
+    margin: 0%;
+}
+
+.rowButton {
+    border: none;
+    padding: 5px;
+    margin-inline: 3%;
+    margin-block: 2%;
+}
+
 
 @media only screen and (min-width: 660px) {
     table {
-        max-width: 60%;
+        min-width: 80%;
         align-self: center;
     }
     .ContainerArea {

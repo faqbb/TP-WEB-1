@@ -25,4 +25,34 @@
     <textarea class="CompleteArea" name="experiencia" id="CompletAreaId"></textarea>
 </section>
 <button class="backgroundSecondary tertiaryColor SubmitButton" id="dropdownButton" type="submit">Enviar</button>
-<script type="text/javascript" src="/scripts/mainScript.js"></script>
+<div class="moreInfoBox">
+    <h3 class="tertiaryColor">Danos mas info de tu viaje y deja tu huella!</h3>
+    <div class="inputContainer tertiaryColor">
+        <div  class="inputData" >
+            <h6 class="inputLabel">Tu destino</h6>
+            <input type="text" id="destinyInput">
+        </div>
+        <div class="inputData">
+            <h6 class="inputLabel">Tus acompañantes</h6>
+            <input type="text" id="companionInput">
+        </div>
+        <div class="inputData">
+            <h6 class="inputLabel">En que fecha?</h6>
+            <input type="text" id="dateInput">
+        </div>
+    </div>
+    <button class="backgroundSecondary tertiaryColor SubmitButton" id="dropdownButton" type="submit">Enviar</button>
+</div>
+<table class="backgroundSecondary table" id="editableTable">
+    <thead>
+        <tr class="tertiaryColor">
+            <th>Destino</th>
+            <th>Con quien irias</th>
+            <th>Fecha</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody id="apiTableBody">
+    </tbody>
+</table>
+<script type="text/javascript" src="/scripts/dynamicTable.js"></script>
