@@ -10,11 +10,19 @@ const text = "mundiViajes";
 
 let cont = document.querySelector(".mainContainer");
 
+// const de html
+const inicio = "inicio";
+const sobreNosotros = "sobre_nosotros";
+const registro = "registro";
+const tuExperiencia = "Tu_experiencia";
+const blogEntradas = "blogEntriesList";
+const blogUsuario = "NoeliaHildera-Spain";
+
+
 load_content(text);
 
 function push(event) {
     let id = event.target.id;
-    document.title = id;
     if (id != "mundiViajes") {
         selec_tab(id);
     } else {
@@ -32,26 +40,27 @@ function selec_tab(id) {
 
 function delete_tab() {
     let i = 0;
-    while (i < btn.length) {
+    for (let i = 0; i < btn.length; i++) {
         btn.forEach((i) => i.classList.remove("selected"));
-        i++;
     }
 }
 
 async function load_content(id) {
     try {
         let response = await fetch(`${window.location.origin}/pages/${id}.html`);
-        let responseTitle = await fetch(`${window.location.origin}/pages/inicio.html`);
+        let responseTitle = await fetch(`${window.location.origin}/pages/${inicio}.html`);
         if (response.ok) {
             response.text().then(processText);
+            addCss(id);
         } else {
             if (responseTitle.ok) {
                 responseTitle.text().then(processText);
+                addCss(inicio);
             } else {
                 if (id != "mundiViajes") {
-                    cont.innerHTML = "error loading for /" + id + "...";
+                    cont.innerHTML = `error loading for /${id} ...`;
                 } else {
-                    cont.innerHTML = "error loading for inicio...";
+                    cont.innerHTML = `error loading for ${inicio}...`;
                 }
             }
         }
@@ -59,6 +68,36 @@ async function load_content(id) {
         cont.innerHTML = "Error";
     }
 }
+
+function addCss(id) {
+    const linkRemplace = document.getElementById("linkCss");
+    console.log(id);
+    if (id === inicio) {
+        linkRemplace.href = "/style/indexStyle.css";
+    } else {
+        if (id === sobreNosotros) {
+            linkRemplace.href = "/style/quinesSomosStyle.css";
+        } else {
+            if (id === tuExperiencia) {
+                linkRemplace.href = "/style/tuExperienciaStyle.css";
+            } else {
+                if (id === registro) {
+                    linkRemplace.href = "/style/registerStyle.css";
+                } else {
+                    if (id == blogEntradas) {
+                        linkRemplace.href = "/style/blogEntriesListStyle.css";
+                    } else {
+                        if (id === blogUsuario) {
+                            linkRemplace.href = "/style/blogEntryStyle.css";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 
 function processText(t) {
@@ -132,8 +171,6 @@ slide3.addEventListener('click', () => {
 //seccion blog
 function pushBlog(event) {
     let id = event.target.id;
-    document.title = id;
-    console.log("el id es: " + id);
     load_blog(id);
     window.history.pushState({ id }, `${id}`, `/page/blogEntries/${id}`);
 }
@@ -143,7 +180,7 @@ async function load_blog(id) {
         let response = await fetch(`${window.location.origin}/pages/blogEntries/${id}.html`);
         if (response.ok) {
             response.text().then(actionBlog);
-
+            addCss(id);
         } else {
             cont.innerHTML = "error loading for /" + id + "...";
         }
@@ -163,6 +200,7 @@ async function returnPage() {
         let response = await fetch(`${window.location.origin}/pages/blogEntriesList.html`);
         if (response.ok) {
             response.text().then(processText);
+            addCss(blogEntradas);
         } else {
             cont.innerHTML = "error loading for blogEntriesList...";
         }

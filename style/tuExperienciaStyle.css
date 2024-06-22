@@ -40,10 +40,6 @@ td {
     display: none;
 }
 
-.mainConteiner {
-    text-align: center;
-}
-
 .SubmitButton {
     border: none;
     font-size: larger;
@@ -52,12 +48,18 @@ td {
     margin-bottom: 12%;
 }
 
+.btn_enviar {
+    display: flex;
+    justify-content: center;
+}
+
 
 @media only screen and (min-width: 660px) {
     table {
         max-width: 60%;
         align-self: center;
     }
+
     .ContainerArea {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -65,9 +67,6 @@ td {
     }
 
     .SubmitButton {
-        border: none;
-        font-size: larger;
-        padding: 10px;
         margin-top: 1%;
         margin-bottom: 6%;
     }
@@ -76,6 +75,5 @@ td {
         width: 90%;
         height: 200px;
         margin-bottom: 30px;
-        background-color: white;
     }
 }
