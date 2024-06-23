@@ -8,6 +8,10 @@
     margin-bottom: 10px;
 }
 
+.contenedor {
+    display: flex;
+}
+
 .mainContainer {
     display: flex;
     flex-direction: column;
