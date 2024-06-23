@@ -20,7 +20,7 @@ th,
 td {
     border: 1px solid black;
     border-collapse: collapse;
-    padding-inline: 2%;
+    
 }
 
 .ContainerArea {
@@ -50,10 +50,11 @@ td {
     margin-bottom: 12%;
 }
 
-.moreInfobox {
+.moreInfoBox {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 .inputContainer {

@@ -30,22 +30,23 @@
     <div class="inputContainer tertiaryColor">
         <div  class="inputData" >
             <h6 class="inputLabel">Tu destino</h6>
-            <input type="text" id="destinyInput">
+            <input type="text" id="destinyInput" required>
         </div>
         <div class="inputData">
             <h6 class="inputLabel">Tus acompañantes</h6>
-            <input type="text" id="companionInput">
+            <input type="text" id="companionInput" required>
         </div>
         <div class="inputData">
             <h6 class="inputLabel">En que fecha?</h6>
-            <input type="text" id="dateInput">
+            <input type="text" id="dateInput" required>
         </div>
     </div>
-    <button class="backgroundSecondary tertiaryColor SubmitButton" id="dropdownButton" type="submit">Enviar</button>
+    <button class="backgroundSecondary tertiaryColor SubmitButton" onclick="addFromInputs()" type="submit">Enviar</button>
 </div>
 <table class="backgroundSecondary table" id="editableTable">
     <thead>
         <tr class="tertiaryColor">
+            <th>ID</th>
             <th>Destino</th>
             <th>Con quien irias</th>
             <th>Fecha</th>
