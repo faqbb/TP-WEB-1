@@ -85,9 +85,6 @@
     border-radius: 25%;
 }
 
-.selected {
-    color: white;
-}
 
 /* Desktop Display */
 @media only screen and (min-width: 950px) {
@@ -109,6 +106,7 @@
 
     .linkItemBox {
         min-width: 50%;
+        cursor: pointer;
     }
 
     .linkContainer {
@@ -121,5 +119,11 @@
 
     table {
         width: 50%;
+    }
+
+    .imgLink {
+        width: 20px;
+        height: 20px;
+        filter: invert(0%) sepia(0%) saturate(16%) hue-rotate(338deg) brightness(93%) contrast(107%);
     }
 }
