@@ -16,12 +16,12 @@
     margin-top: 2%;
     width: 70%;
 }
-
 .entry {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .entryTitle {

@@ -231,6 +231,9 @@ a {
     align-items: center;
 }
 
+.selected {
+    color: var(--color-white);
+}
 
 /* Desktop Display */
 @media only screen and (min-width: 660px) {

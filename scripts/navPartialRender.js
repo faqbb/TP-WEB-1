@@ -117,8 +117,14 @@ function processText(t) {
         .forEach(b => b.addEventListener("click", () => {
             switchSlide(slide1.id)
         }))
+
+    //seccion linkIndex
+    let btnLink = cont.querySelectorAll(".btnLink");
+    for (let i = 0; i < btnLink.length; i++) {
+        btnLink[i].addEventListener("click", (event) => push(event));
+    }
     //section blog
-    cont.querySelectorAll(".btn_blogs")
+    cont.querySelectorAll(".entry")
         .forEach(b => b.addEventListener("click", (event) => pushBlog(event)));
 
 
@@ -168,9 +174,15 @@ slide3.addEventListener('click', () => {
     switchSlide(slide1.id)
 })
 
+
 //seccion blog
 function pushBlog(event) {
     let id = event.target.id;
+    if (id != "mundiViajes") {
+        selec_tab(id);
+    } else {
+        delete_tab();
+    }
     load_blog(id);
     window.history.pushState({ id }, `${id}`, `/page/blogEntries/${id}`);
 }
