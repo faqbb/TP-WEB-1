@@ -220,7 +220,13 @@ a {
     transform: translateX(26px);
     content: '🌑';
 }
+/* Main */
 
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* Footer */
 
 .footer {
