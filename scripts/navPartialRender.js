@@ -22,18 +22,23 @@ const blogUsuario = "NoeliaHildera-Spain";
 load_content(inicio);
 
 function push(event) {
-    let id = event.target.id;
+    let id 
+    if(event.target.id) {
+        id = event.target.id
+    } else if (event.target.parentNode.id){
+        id = event.target.parentNode.id
+    } else {
+        id = event.target.parentNode.parentNode.id
+    }
     if (id != "mundiViajes" && id) {
         selec_tab(id);
         load_content(id);
     } else {
         delete_tab();
         load_content(inicio);
+        id = inicio
     }
     window.history.pushState({ id }, `${id}`, `/page/${id}`);
-    if (!id || id === "mundiViajes") {
-        window.history.pushState({ id }, `${id}`, `/page/${inicio}`);
-    }
 }
 
 function selec_tab(id) {
@@ -178,26 +183,16 @@ function switchSlide(slide) {
     }
 }
 
-slide1.addEventListener('click', () => {
-    switchSlide(slide2.id)
-})
-
-slide2.addEventListener('click', () => {
-    switchSlide(slide3.id)
-})
-
-slide3.addEventListener('click', () => {
-    switchSlide(slide1.id)
-})
-
 
 //seccion blog
 function pushBlog(event) {
-    let id = event.target.id;
-    if (id != "mundiViajes") {
-        selec_tab(id);
+    let id
+    if(event.target.id) {
+        id = event.target.id
+    } else if (event.target.parentNode.id){
+        id = event.target.parentNode.id
     } else {
-        delete_tab();
+        id = event.target.parentNode.parentNode.id
     }
     load_blog(id);
     window.history.pushState({ id }, `${id}`, `/page/blogEntries/${id}`);

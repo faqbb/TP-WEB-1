@@ -108,7 +108,8 @@ a {
     align-self: center;
     padding-block: 10px;
     padding-inline: 25px;
-    margin-top: 10px;
+    margin-top: 5%;
+    min-height: 105px;
 }
 
 .btntitleindex {
@@ -248,6 +249,9 @@ a {
 
 /* Desktop Display */
 @media only screen and (min-width: 660px) {
+    .titleBackground {
+        margin-top: 10px;
+    }
 
     .navBar {
         display: flex;

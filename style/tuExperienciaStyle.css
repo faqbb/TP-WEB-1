@@ -26,9 +26,11 @@ td {
 .ContainerArea {
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
     margin-block: 3%;
+    padding-inline: 2%;
 }
 
 .CompleteArea {
@@ -59,7 +61,7 @@ td {
 
 .inputContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .inputData {
@@ -95,6 +97,7 @@ td {
         margin-top: 10px;
         margin-bottom: 10px;
         width: 100%;
+        padding-inline: 0%;
     }
 
     .SubmitButton {
@@ -106,5 +109,15 @@ td {
         width: 90%;
         height: 200px;
         margin-bottom: 30px;
+        
+    }
+    .moreInfo {
+        width: 50%;
+        align-items: center;
+    }
+    .inputContainer {
+        flex-direction: row;
+        width: 100%;
+        place-content: center;
     }
 }
