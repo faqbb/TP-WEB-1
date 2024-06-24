@@ -1,4 +1,3 @@
-const apiEndpoint = 'https://6675d4f5a8d2b4d072f19c6b.mockapi.io/web/tp/userExperiences';
 
 async function fetchData() {
     try {
@@ -55,7 +54,7 @@ async function addFromInputs() {
             Date: date
         };
         await postToApi(data)
-        fetchData()
+        addEditableRow(data.id, data.Destiny, data.Companion, data.Date, table)
     }
 }
 

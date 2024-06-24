@@ -6,7 +6,6 @@ for (let i = 0; i < btn.length; i++) {
 let btn_title = document.querySelector(".btntitleindex");
 btn_title.addEventListener("click", (event) => push(event));
 
-const text = "mundiViajes";
 const apiEndpoint = 'https://6675d4f5a8d2b4d072f19c6b.mockapi.io/web/tp/userExperiences';
 
 let cont = document.querySelector(".mainContainer");
@@ -20,23 +19,29 @@ const blogEntradas = "blogEntriesList";
 const blogUsuario = "NoeliaHildera-Spain";
 
 
-load_content(text);
+load_content(inicio);
 
 function push(event) {
     let id = event.target.id;
-    if (id != "mundiViajes") {
+    if (id != "mundiViajes" && id) {
         selec_tab(id);
+        load_content(id);
     } else {
         delete_tab();
+        load_content(inicio);
     }
-    load_content(id);
     window.history.pushState({ id }, `${id}`, `/page/${id}`);
+    if (!id || id === "mundiViajes") {
+        window.history.pushState({ id }, `${id}`, `/page/${inicio}`);
+    }
 }
 
 function selec_tab(id) {
-    btn.forEach((item) => item.classList.remove("selected"));
-    document.querySelectorAll("#" + id)
-        .forEach((item) => item.classList.add("selected"));
+    if (id != "mundiViajes" && id) {
+        btn.forEach((item) => item.classList.remove("selected"));
+        document.querySelectorAll("#" + id)
+            .forEach((item) => item.classList.add("selected"));
+    }
 }
 
 function delete_tab() {
@@ -72,7 +77,6 @@ async function load_content(id) {
 
 function addCss(id) {
     const linkRemplace = document.getElementById("linkCss");
-    console.log(id);
     if (id === inicio) {
         linkRemplace.href = "/style/indexStyle.css";
     } else {
@@ -104,50 +108,58 @@ function addCss(id) {
 function processText(t) {
     cont.innerHTML = t;
     //section slide
-    cont.querySelectorAll("#slide1")
-        .forEach(b => b.addEventListener("click", () => {
-            switchSlide(slide2.id)
-        }))
+    if (cont.querySelectorAll("#slide1").length > 0) {
+        cont.querySelectorAll("#slide1")
+            .forEach(b => b.addEventListener("click", () => {
+                switchSlide(slide2.id)
+            }))
 
-    cont.querySelectorAll("#slide2")
-        .forEach(b => b.addEventListener("click", () => {
-            switchSlide(slide3.id)
-        }))
+        cont.querySelectorAll("#slide2")
+            .forEach(b => b.addEventListener("click", () => {
+                switchSlide(slide3.id)
+            }))
 
-    cont.querySelectorAll("#slide3")
-        .forEach(b => b.addEventListener("click", () => {
-            switchSlide(slide1.id)
-        }))
+        cont.querySelectorAll("#slide3")
+            .forEach(b => b.addEventListener("click", () => {
+                switchSlide(slide1.id)
+            }))
+    }
 
     //seccion linkIndex
-    let btnLink = cont.querySelectorAll(".btnLink");
-    for (let i = 0; i < btnLink.length; i++) {
-        btnLink[i].addEventListener("click", (event) => push(event));
+    if (cont.querySelectorAll(".btnLink").length > 0) {
+        let btnLink = cont.querySelectorAll(".btnLink");
+        for (let i = 0; i < btnLink.length; i++) {
+            btnLink[i].addEventListener("click", (event) => push(event));
+        }
     }
+
     //section blog
-    cont.querySelectorAll(".entry")
-        .forEach(b => b.addEventListener("click", (event) => pushBlog(event)));
+    if (cont.querySelectorAll(".entry").length > 0) {
+        cont.querySelectorAll(".entry")
+            .forEach(b => b.addEventListener("click", (event) => pushBlog(event)));
+    }
 
     //seccion api
     fetchData()
 
     //section register
-    displayCaptcha()
-    cont.querySelectorAll("#TextCaptcha")
-        .forEach(b => b.addEventListener("none", displayCaptcha));
-    cont.querySelectorAll("#form")
-        .forEach(b => b.addEventListener("submit", agregar));
-    cont.querySelectorAll("#refreshButton")
-        .forEach(b => b.addEventListener('click', function () {
-            displayCaptcha();
-            ResetInput();
-        }))
-    cont.querySelectorAll("#ConfirmButton")
-        .forEach(b => b.addEventListener('click', function () {
-            ValueInput();
-            CompararArreglos();
-        }))
-
+    if (cont.querySelectorAll("#TextCaptcha").length > 0) {
+        displayCaptcha()
+        cont.querySelectorAll("#TextCaptcha")
+            .forEach(b => b.addEventListener("none", displayCaptcha));
+        cont.querySelectorAll("#form")
+            .forEach(b => b.addEventListener("submit", agregar));
+        cont.querySelectorAll("#refreshButton")
+            .forEach(b => b.addEventListener('click', function () {
+                displayCaptcha();
+                ResetInput();
+            }))
+        cont.querySelectorAll("#ConfirmButton")
+            .forEach(b => b.addEventListener('click', function () {
+                ValueInput();
+                CompararArreglos();
+            }))
+    }
 }
 
 //seccion slide
@@ -217,6 +229,7 @@ async function returnPage() {
         if (response.ok) {
             response.text().then(processText);
             addCss(blogEntradas);
+            selec_tab(blogEntradas);
         } else {
             cont.innerHTML = "error loading for blogEntriesList...";
         }
@@ -285,7 +298,6 @@ function ResetInput() {
 
 
 async function fetchData() {
-    console.log("entre en la funcion de tabala");
     try {
         const response = await fetch(apiEndpoint);
         if (!response.ok) {

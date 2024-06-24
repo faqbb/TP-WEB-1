@@ -111,11 +111,14 @@ a {
     margin-top: 10px;
 }
 
+.btntitleindex {
+    cursor: pointer;
+}
+
 .title {
     display: flex;
     align-items: center;
     text-align: center;
-    cursor: pointer;
 }
 
 .img_title {
@@ -220,6 +223,7 @@ a {
     transform: translateX(26px);
     content: '🌑';
 }
+
 /* Main */
 
 .mainContainer {
@@ -227,6 +231,7 @@ a {
     flex-direction: column;
     align-items: center;
 }
+
 /* Footer */
 
 .footer {
